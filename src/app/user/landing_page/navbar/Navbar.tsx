@@ -86,9 +86,9 @@ function Navbar(props: Props) {
                 flexGrow: 1,
                 height: "83px",
                 display: { xs: "none", sm: "block" },
-                cursor:"pointer",
+                cursor: "pointer",
               }}
-              onClick={()=> router.push("/")}
+              onClick={() => router.push("/")}
             >
               <img src="/injaz-logo-two.png" alt="logo" />
             </Typography>
@@ -97,9 +97,8 @@ function Navbar(props: Props) {
               className="header_links"
               sx={{ display: { xs: "none", sm: "block" } }}
             >
-              <div style={{marginRight:"5px"}}>
-              <EnquiryForm />
-
+              <div style={{ marginRight: "5px" }}>
+                <EnquiryForm />
               </div>
               <Button
                 onClick={() => router.push("/adminpage/signin_signup/signin")}
